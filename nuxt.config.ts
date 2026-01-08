@@ -50,6 +50,30 @@ export default defineNuxtConfig({
 			rootId: `${toKebabCase(app.title)}`,
 			head: {
 				title: app.title,
+				meta: [
+					{
+						name: 'description',
+						content: 'You are invited to the JOTUN Applicator Night Award 2026',
+					},
+					{ name: 'og:title', content: app.title },
+					{
+						name: 'og:description',
+						content: 'You are invited to the JOTUN Applicator Night Award 2026',
+					},
+					{ name: 'og:type', content: 'website' },
+					{ name: 'og:image', content: '/images/og.png' },
+					{
+						name: 'og:image:alt',
+						content: 'JOTUN Applicator Night Award 2026 Invitation',
+					},
+					{ name: 'twitter:card', content: 'summary_large_image' },
+					{ name: 'twitter:title', content: app.title },
+					{
+						name: 'twitter:description',
+						content: 'You are invited to the JOTUN Applicator Night Award 2026',
+					},
+					{ name: 'twitter:image', content: '/images/og.png' },
+				],
 			},
 		},
 	},
