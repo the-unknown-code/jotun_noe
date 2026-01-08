@@ -1,5 +1,19 @@
 <template>
-	<main ref="$main" class="page-index">
+	<section>
+		<audio
+			ref="$audio"
+			type="audio/mpeg"
+			src="/sound/ambience.mp3"
+			loop
+			autoplay
+		></audio>
+		<div class="page-index__background">
+			<img
+				ref="$background"
+				src="/images/background.webp"
+				alt="JOTUN - Invitation"
+			/>
+		</div>
 		<div id="stars">
 			<img
 				v-for="i in 10"
@@ -9,89 +23,115 @@
 				alt="JOTUN - Invitation"
 			/>
 		</div>
-		<div class="page-index__background">
-			<img
-				ref="$background"
-				src="/images/background.webp"
-				alt="JOTUN - Invitation"
-			/>
-		</div>
-		<div class="page-index__content">
+
+		<main ref="$main" :class="['page-index', { 'is-visible': isVisible }]">
+			<div class="page-index__content">
+				<img
+					id="jotun"
+					class="animate"
+					src="/images/logo.webp"
+					alt="JOTUN - Invitation"
+				/>
+				<div id="logo">
+					<img
+						class="animate"
+						src="/images/title_01.webp"
+						alt="JOTUN - Invitation"
+					/>
+					<img
+						class="animate"
+						src="/images/title_02.webp"
+						alt="JOTUN - Invitation"
+					/>
+					<img
+						class="animate"
+						src="/images/title_03.webp"
+						alt="JOTUN - Invitation"
+					/>
+					<img
+						class="animate"
+						src="/images/title_04.webp"
+						alt="JOTUN - Invitation"
+					/>
+				</div>
+				<div id="company">
+					<p class="animate">
+						<span>to: </span>
+						<span>Company Name</span>
+					</p>
+				</div>
+				<div id="info">
+					<img
+						class="animate"
+						src="/images/line.webp"
+						alt="JOTUN - Invitation"
+					/>
+					<p class="animate">
+						We are pleased to invite you to attend the
+						<b>Applicator Night Award 2026</b>, an exclusive evening dedicated
+						to honouring outstanding achievements and valuable contributions.
+					</p>
+					<p class="animate">
+						Location<br />
+						<span>
+							<b>February 6, 2026, Black Owl PIK</b><br />beginning at
+							<b>18:00</b>.
+						</span>
+					</p>
+					<p class="animate">
+						Dess Code<br />
+						<span>
+							<b>Burgundy & Maroon tones</b>
+						</span>
+					</p>
+					<img
+						class="animate"
+						src="/images/line.webp"
+						alt="JOTUN - Invitation"
+					/>
+				</div>
+				<div id="qr-code">
+					<img
+						class="animate"
+						src="/images/qr-code.webp"
+						alt="JOTUN - Invitation"
+					/>
+					<p class="animate">Please present the QR Code above upon arrival.</p>
+				</div>
+			</div>
+		</main>
+		<div id="intro" ref="$intro">
 			<img
 				id="jotun"
 				class="animate"
 				src="/images/logo.webp"
 				alt="JOTUN - Invitation"
 			/>
-			<div id="logo">
-				<img
-					class="animate"
-					src="/images/title_01.webp"
-					alt="JOTUN - Invitation"
-				/>
-				<img
-					class="animate"
-					src="/images/title_02.webp"
-					alt="JOTUN - Invitation"
-				/>
-				<img
-					class="animate"
-					src="/images/title_03.webp"
-					alt="JOTUN - Invitation"
-				/>
-				<img
-					class="animate"
-					src="/images/title_04.webp"
-					alt="JOTUN - Invitation"
-				/>
-			</div>
-			<div id="company">
-				<p class="animate">
-					<span>to: </span>
-					<span>Company Name</span>
-				</p>
-			</div>
-			<div id="info">
-				<img class="animate" src="/images/line.webp" alt="JOTUN - Invitation" />
-				<p class="animate">
-					We are pleased to invite you to attend the
-					<b>Applicator Night Award 2026</b>, an exclusive evening dedicated to
-					honouring outstanding achievements and valuable contributions.
-				</p>
-				<p class="animate">
-					Location<br />
-					<span>
-						<b>February 6, 2026, Black Owl PIK</b><br />beginning at
-						<b>18:00</b>.
-					</span>
-				</p>
-				<p class="animate">
-					Dess Code<br />
-					<span>
-						<b>Burgundy & Maroon tones</b>
-					</span>
-				</p>
-				<img class="animate" src="/images/line.webp" alt="JOTUN - Invitation" />
-			</div>
-			<div id="qr-code">
-				<img
-					class="animate"
-					src="/images/qr-code.webp"
-					alt="JOTUN - Invitation"
-				/>
-				<p class="animate">Please present the QR Code above upon arrival.</p>
-			</div>
+			<p @click="initialize">Open Invitation</p>
 		</div>
-	</main>
+	</section>
 </template>
 
 <script setup lang="ts">
 import gsap from 'gsap/all';
 
+const $audio = ref<HTMLAudioElement | null>(null);
 const $main = ref<HTMLElement | null>(null);
+const $intro = ref<HTMLElement | null>(null);
+const isVisible = ref(false);
+
 const initialize = () => {
 	if (!$main.value) return;
+
+	isVisible.value = true;
+	$audio.value?.play();
 	const $animate = $main.value.querySelectorAll('.animate');
+
+	gsap.to($intro.value, {
+		opacity: 0,
+		duration: 1.35,
+		ease: 'power2.inOut',
+	});
 
 	gsap.set($animate, {
 		opacity: 0,
@@ -110,7 +150,7 @@ const initialize = () => {
 
 tryOnMounted(async () => {
 	await nextTick();
-	initialize();
+	// initialize();
 });
 </script>
 
@@ -139,14 +179,30 @@ tryOnMounted(async () => {
 	}
 }
 
-.page-index {
+section {
+	position: relative;
 	min-height: 100vh;
-	color: #e7c79a;
-	padding-bottom: var(--spacer-64);
 	background-color: #031e45;
 
-	.animate {
-		opacity: 0;
+	#intro {
+		@include fill(fixed);
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacer-16);
+		align-items: center;
+		justify-content: center;
+		font-size: 24px;
+		font-weight: 700;
+		color: #e7c79a;
+		z-index: 10;
+
+		img {
+			width: 120px;
+		}
+
+		p {
+			text-decoration: underline;
+		}
 	}
 
 	#stars {
@@ -181,6 +237,21 @@ tryOnMounted(async () => {
 				}
 			}
 		}
+	}
+}
+
+.page-index {
+	min-height: 100dvh;
+	color: #e7c79a;
+	padding-bottom: var(--spacer-64);
+	display: none;
+
+	&.is-visible {
+		display: block;
+	}
+
+	.animate {
+		opacity: 0;
 	}
 
 	&__background {
