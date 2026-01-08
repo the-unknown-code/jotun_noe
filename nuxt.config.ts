@@ -61,7 +61,10 @@ export default defineNuxtConfig({
 						content: 'You are invited to the JOTUN Applicator Night Award 2026',
 					},
 					{ name: 'og:type', content: 'website' },
-					{ name: 'og:image', content: '/images/og.png' },
+					{
+						name: 'og:image',
+						content: 'https://jotun-noe.vercel.app/images/og.png',
+					},
 					{
 						name: 'og:image:alt',
 						content: 'JOTUN Applicator Night Award 2026 Invitation',
@@ -72,7 +75,10 @@ export default defineNuxtConfig({
 						name: 'twitter:description',
 						content: 'You are invited to the JOTUN Applicator Night Award 2026',
 					},
-					{ name: 'twitter:image', content: '/images/og.png' },
+					{
+						name: 'twitter:image',
+						content: 'https://jotun-noe.vercel.app/images/og.png',
+					},
 				],
 			},
 		},
