@@ -79,7 +79,7 @@
 						</span>
 					</p>
 					<p class="animate">
-						Dess Code<br />
+						Dress Code<br />
 						<span>
 							<b>Burgundy & Maroon tones</b>
 						</span>
