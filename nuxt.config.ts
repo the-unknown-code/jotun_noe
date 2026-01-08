@@ -2,14 +2,7 @@ import config, { app } from './app.config';
 import { toSass } from './shared/sass-utils';
 import { toKebabCase } from './app/libs/common/utils';
 
-const modules = [
-	'@nuxt/eslint',
-	'@pinia/nuxt',
-	'@vueuse/nuxt',
-	'@nuxt/fonts',
-	'@nuxtjs/robots',
-	'@nuxtjs/sitemap',
-];
+const modules = ['@nuxt/eslint', '@pinia/nuxt', '@vueuse/nuxt'];
 
 if (app.storyblok.enabled) {
 	// @ts-expect-error - Storyblok module is not typed
@@ -41,10 +34,6 @@ export default defineNuxtConfig({
 	modules,
 
 	css: ['@/assets/main.scss'],
-
-	fonts: {
-		...app.fonts,
-	},
 
 	$development: {
 		devtools: { enabled: false },

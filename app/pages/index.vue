@@ -1,59 +1,125 @@
 <template>
-	<main class="page-index">
+	<main ref="$main" class="page-index">
 		<div class="page-index__background">
-			<img src="/images/background.webp" alt="JOTUN - Invitation" />
+			<img
+				ref="$background"
+				src="/images/background.webp"
+				alt="JOTUN - Invitation"
+			/>
 		</div>
 		<div class="page-index__content">
-			<img id="jotun" src="/images/logo.webp" alt="JOTUN - Invitation" />
+			<img
+				id="jotun"
+				class="animate"
+				src="/images/logo.webp"
+				alt="JOTUN - Invitation"
+			/>
 			<div id="logo">
-				<img src="/images/title_01.webp" alt="JOTUN - Invitation" />
-				<img src="/images/title_02.webp" alt="JOTUN - Invitation" />
-				<img src="/images/title_03.webp" alt="JOTUN - Invitation" />
-				<img src="/images/title_04.webp" alt="JOTUN - Invitation" />
+				<img
+					class="animate"
+					src="/images/title_01.webp"
+					alt="JOTUN - Invitation"
+				/>
+				<img
+					class="animate"
+					src="/images/title_02.webp"
+					alt="JOTUN - Invitation"
+				/>
+				<img
+					class="animate"
+					src="/images/title_03.webp"
+					alt="JOTUN - Invitation"
+				/>
+				<img
+					class="animate"
+					src="/images/title_04.webp"
+					alt="JOTUN - Invitation"
+				/>
 			</div>
 			<div id="company">
-				<p>
+				<p class="animate">
 					<span>to: </span>
 					<span>Company Name</span>
 				</p>
 			</div>
 			<div id="info">
-				<img src="/images/line.webp" alt="JOTUN - Invitation" />
-				<p>
-					We are pleased to invite you to attend the<br />
-					<b>Applicator Night Award 2026</b>, an exclusive evening<br />
-					dedicated to honouring outstanding<br />
-					achievements and valuable contributions.
+				<img class="animate" src="/images/line.webp" alt="JOTUN - Invitation" />
+				<p class="animate">
+					We are pleased to invite you to attend the
+					<b>Applicator Night Award 2026</b>, an exclusive evening dedicated to
+					honouring outstanding achievements and valuable contributions.
 				</p>
-				<p>
+				<p class="animate">
 					Location<br />
 					<span>
 						<b>February 6, 2026, Black Owl PIK</b><br />beginning at
 						<b>18:00</b>.
 					</span>
 				</p>
-				<p>
+				<p class="animate">
 					Dess Code<br />
 					<span>
 						<b>Burgundy & Maroon tones</b>
 					</span>
 				</p>
-				<img src="/images/line.webp" alt="JOTUN - Invitation" />
+				<img class="animate" src="/images/line.webp" alt="JOTUN - Invitation" />
+			</div>
+			<div id="qr-code">
+				<img
+					class="animate"
+					src="/images/qr-code.webp"
+					alt="JOTUN - Invitation"
+				/>
+				<p class="animate">Please present the QR Code above upon arrival.</p>
 			</div>
 		</div>
 	</main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import gsap from 'gsap/all';
+
+const $main = ref<HTMLElement | null>(null);
+const initialize = () => {
+	if (!$main.value) return;
+	const $animate = $main.value.querySelectorAll('.animate');
+
+	gsap.set($animate, {
+		opacity: 0,
+		y: 40,
+	});
+
+	gsap.to($animate, {
+		delay: 0.25,
+		opacity: 1,
+		y: 0,
+		duration: 1.35,
+		ease: 'power2.inOut',
+		stagger: 0.135,
+	});
+};
+
+tryOnMounted(async () => {
+	await nextTick();
+	initialize();
+});
+</script>
 
 <style lang="scss" scoped>
 .page-index {
 	min-height: 100vh;
 	color: #e7c79a;
+	padding-bottom: var(--spacer-64);
+	background-color: #031e45;
+
+	.animate {
+		opacity: 0;
+	}
 
 	&__background {
 		@include fill(absolute);
-		z-index: -1;
+		transform: translateY(0) !important;
+		z-index: 0;
 
 		img {
 			@include fill(absolute);
@@ -116,7 +182,7 @@
 			text-align: center;
 
 			p {
-				font-size: 15px;
+				font-size: 17px;
 
 				b {
 					font-family: 'BentonModDisp-RegularItalic';
@@ -131,6 +197,25 @@
 				position: relative;
 				width: 150px;
 				height: auto;
+			}
+		}
+
+		#qr-code {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: var(--spacer-16);
+			margin-top: var(--spacer-64);
+
+			img {
+				position: relative;
+				width: 150px;
+				height: auto;
+			}
+
+			p {
+				font-size: 15px;
 			}
 		}
 	}

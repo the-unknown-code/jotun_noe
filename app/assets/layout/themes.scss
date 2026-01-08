@@ -13,4 +13,7 @@
 
 html {
     background-color: black;
+    /* Enable font antialiasing for smoother font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
