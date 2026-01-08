@@ -1,5 +1,14 @@
 <template>
 	<main ref="$main" class="page-index">
+		<div id="stars">
+			<img
+				v-for="i in 10"
+				:key="i"
+				class="star"
+				src="/images/star.webp"
+				alt="JOTUN - Invitation"
+			/>
+		</div>
 		<div class="page-index__background">
 			<img
 				ref="$background"
@@ -106,6 +115,30 @@ tryOnMounted(async () => {
 </script>
 
 <style lang="scss" scoped>
+@keyframes star-shine {
+	0% {
+		transform: scale(1) rotate(0deg);
+	}
+	20% {
+		transform: scale(1.25) rotate(72deg);
+		filter: brightness(2.2);
+	}
+	40% {
+		transform: scale(1.05) rotate(144deg);
+	}
+	60% {
+		transform: scale(1.18) rotate(216deg);
+		filter: brightness(2.5);
+	}
+	80% {
+		transform: scale(1) rotate(288deg);
+	}
+	100% {
+		transform: scale(1) rotate(360deg);
+		filter: brightness(0.7);
+	}
+}
+
 .page-index {
 	min-height: 100vh;
 	color: #e7c79a;
@@ -114,6 +147,40 @@ tryOnMounted(async () => {
 
 	.animate {
 		opacity: 0;
+	}
+
+	#stars {
+		@include fill(absolute);
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		pointer-events: none;
+
+		img {
+			position: absolute;
+			width: 50px;
+			height: auto;
+
+			/* Randomize star position, animation, and size for 10 stars */
+			@for $i from 1 through 10 {
+				&:nth-child(#{$i}) {
+					opacity: #{0.25 + random(51) / 100};
+					$top: random(90); // percent of viewport height
+					$left: random(90); // percent of viewport width
+					$size: 20 + random(41); // size in px, from 50 to 90
+					$dur: 2 + random(25) / 10; // random duration 2s to 4.5s
+					$animation_types: (linear);
+					$animtype: nth($animation_types, random(length($animation_types)));
+					top: #{$top}vh;
+					left: #{$left}vw;
+					width: #{$size}px;
+					animation: star-shine #{$dur}s #{$animtype} infinite;
+					will-change: transform, opacity, filter;
+					transform-origin: 50% 50%;
+					pointer-events: none;
+				}
+			}
+		}
 	}
 
 	&__background {
@@ -137,7 +204,7 @@ tryOnMounted(async () => {
 		align-items: center;
 		justify-content: center;
 		padding: var(--spacer-32);
-		z-index: 1;
+		z-index: 10;
 
 		#jotun {
 			width: 120px;
