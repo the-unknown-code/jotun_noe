@@ -26,8 +26,6 @@
 </template>
 
 <script setup lang="ts">
-// @ts-expect-error - Font loader is not typed
-import loadFonts from '@fuzzco/font-loader';
 import { toKebabCase } from './libs/common/utils';
 import { EVENTS } from './libs/constants/event';
 import useAppStore from './store/useAppStore';
@@ -46,20 +44,9 @@ const scope = effectScope();
 const enabled = computed(() => $store.isEnabled);
 
 const preloadFonts = async () => {
-	try {
-		const {
-			public: { app },
-		} = useRuntimeConfig();
+	await nextTick();
 
-		const families = app.fonts.families.map((font: any) => ({
-			name: font.name,
-		}));
-		await loadFonts(families);
-		fontsLoaded.value = true;
-	} catch (error) {
-		console.error(error);
-		fontsLoaded.value = true;
-	}
+	fontsLoaded.value = true;
 };
 
 scope.run(async () => {

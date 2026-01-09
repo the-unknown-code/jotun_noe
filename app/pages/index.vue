@@ -202,6 +202,8 @@ section {
 
 		p {
 			text-decoration: underline;
+			font-size: 14px;
+			font-style: italic;
 		}
 	}
 
@@ -300,6 +302,8 @@ section {
 			margin: var(--spacer-32) 0;
 
 			p {
+				font-style: italic;
+
 				span {
 					&:nth-child(1) {
 						font-size: 16px;
@@ -320,14 +324,16 @@ section {
 			text-align: center;
 
 			p {
-				font-size: 17px;
+				font-size: 14px;
+				font-style: italic;
 
 				b {
-					font-family: 'BentonModDisp-RegularItalic';
+					//font-family: 'BentonModDisp-RegularItalic';
+					font-weight: bold;
 				}
 
 				span {
-					font-size: 18px;
+					font-size: 16px;
 				}
 			}
 
@@ -353,7 +359,9 @@ section {
 			}
 
 			p {
-				font-size: 15px;
+				font-size: 13px;
+				font-style: italic;
+				text-align: center;
 			}
 		}
 	}

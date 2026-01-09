@@ -120,9 +120,14 @@ export const app: AppConfig = {
 	},
 	fonts: {
 		defaults: {
-			weights: [],
+			weights: [300, 400],
 		},
-		families: [],
+		families: [
+			{
+				name: 'Noto+Sans',
+				provider: 'google',
+			},
+		],
 	},
 	link: {
 		prefetch: 'visibility', // nuxt default
