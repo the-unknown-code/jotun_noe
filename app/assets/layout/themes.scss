@@ -1,19 +1,18 @@
-@use "sass:color";
+@use 'sass:color';
 
 :root {
-    @each $name, $theme in getThemes() {
-        .theme-#{$name} {
-            @each $name, $color in $theme {
-                --theme-#{$name}: #{$color};
-            }
-        }
-    }
+	@each $name, $theme in getThemes() {
+		.theme-#{$name} {
+			@each $name, $color in $theme {
+				--theme-#{$name}: #{$color};
+			}
+		}
+	}
 }
 
-
 html {
-    background-color: black;
-    /* Enable font antialiasing for smoother font rendering */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	background-color: #12000b;
+	/* Enable font antialiasing for smoother font rendering */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }

@@ -16,7 +16,7 @@
 		</div>
 		<div id="stars">
 			<img
-				v-for="i in 10"
+				v-for="i in 50"
 				:key="i"
 				class="star"
 				src="/images/star.webp"
@@ -182,7 +182,7 @@ tryOnMounted(async () => {
 section {
 	position: relative;
 	min-height: 100vh;
-	background-color: #031e45;
+	background-color: #12000b;
 
 	#intro {
 		@include fill(fixed);
@@ -204,15 +204,21 @@ section {
 			text-decoration: underline;
 			font-size: 14px;
 			font-style: italic;
+			cursor: pointer;
 		}
 	}
 
 	#stars {
-		@include fill(absolute);
+		@include fill(fixed);
 		width: 100%;
 		height: 100%;
 		z-index: 1;
 		pointer-events: none;
+		opacity: 0.8;
+
+		@include desktop {
+			opacity: 1;
+		}
 
 		img {
 			position: absolute;
@@ -220,13 +226,13 @@ section {
 			height: auto;
 
 			/* Randomize star position, animation, and size for 10 stars */
-			@for $i from 1 through 10 {
+			@for $i from 1 through 50 {
 				&:nth-child(#{$i}) {
-					opacity: #{0.25 + random(51) / 100};
+					opacity: #{0.05 + random(31) / 100};
 					$top: random(90); // percent of viewport height
 					$left: random(90); // percent of viewport width
-					$size: 20 + random(41); // size in px, from 50 to 90
-					$dur: 2 + random(25) / 10; // random duration 2s to 4.5s
+					$size: 10 + random(61); // size in px, from 50 to 90
+					$dur: 2 + random(45) / 10; // random duration 2s to 4.5s
 					$animation_types: (linear);
 					$animtype: nth($animation_types, random(length($animation_types)));
 					top: #{$top}vh;
@@ -245,11 +251,14 @@ section {
 .page-index {
 	min-height: 100dvh;
 	color: #e7c79a;
-	padding-bottom: var(--spacer-64);
+	// padding-bottom: var(--spacer-64);
 	display: none;
 
 	&.is-visible {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.animate {
@@ -257,9 +266,10 @@ section {
 	}
 
 	&__background {
-		@include fill(absolute);
+		@include fill(fixed);
 		transform: translateY(0) !important;
 		z-index: 0;
+		opacity: 0.78;
 
 		img {
 			@include fill(absolute);
@@ -278,6 +288,8 @@ section {
 		justify-content: center;
 		padding: var(--spacer-32);
 		z-index: 10;
+		max-width: 540px;
+		margin: 0 auto;
 
 		#jotun {
 			width: 120px;
