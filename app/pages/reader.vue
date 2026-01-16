@@ -5,7 +5,7 @@
 			<span>{{ company?.company }}</span>
 		</p>
 		<p>
-			<span>N° of Invitatee</span>
+			<span>N° of Invitee</span>
 			<span>{{ company?.pax }}</span>
 		</p>
 		<p>
