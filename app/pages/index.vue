@@ -81,7 +81,7 @@
 						</span>
 					</p>
 					<p class="animate">
-						Time<br />
+						Date & Time<br />
 						<span>
 							<b>February 6, 2026 at 17:00</b>
 						</span>
