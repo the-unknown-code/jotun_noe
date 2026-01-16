@@ -89,7 +89,7 @@
 					<p class="animate">
 						Dress Code<br />
 						<span>
-							<b>Burgundy & Maroon tones</b>
+							<b>Cocktail Party, No Batik</b>
 						</span>
 					</p>
 					<img
