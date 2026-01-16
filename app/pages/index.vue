@@ -8,21 +8,24 @@
 			autoplay
 		></audio>
 		<div class="page-index__background">
-			<img
-				ref="$background"
-				src="/images/background.webp"
-				alt="JOTUN - Invitation"
-			/>
+			<video
+				src="/video/background.mp4"
+				autoplay
+				loop
+				muted
+				playsinline
+			></video>
 		</div>
-		<div id="stars">
+		<!--		<div id="stars">
 			<img
-				v-for="i in 50"
+				v-for="i in 20"
 				:key="i"
 				class="star"
 				src="/images/star.webp"
 				alt="JOTUN - Invitation"
 			/>
 		</div>
+		-->
 
 		<main ref="$main" :class="['page-index', { 'is-visible': isVisible }]">
 			<div class="page-index__content">
@@ -56,8 +59,8 @@
 				</div>
 				<div id="company">
 					<p class="animate">
-						<span>to: </span>
-						<span>Company Name</span>
+						<span>to:<br /></span>
+						<span>{{ company?.company }}</span>
 					</p>
 				</div>
 				<div id="info">
@@ -74,8 +77,13 @@
 					<p class="animate">
 						Location<br />
 						<span>
-							<b>February 6, 2026, Black Owl PIK</b><br />beginning at
-							<b>18:00</b>.
+							<b>Black Owl PIK</b>
+						</span>
+					</p>
+					<p class="animate">
+						Time<br />
+						<span>
+							<b>February 6, 2026 at 17:00</b>
 						</span>
 					</p>
 					<p class="animate">
@@ -91,11 +99,22 @@
 					/>
 				</div>
 				<div id="qr-code">
+					<!--
 					<img
 						class="animate"
 						src="/images/qr-code.webp"
 						alt="JOTUN - Invitation"
 					/>
+					-->
+					<div class="animate">
+						<Qrcode
+							:value="`https://jotun-noe.vercel.app/reader?id=${company?.id}`"
+							variant="rounded"
+							radius="5"
+							black-color="#debf9a"
+							white-color="transparent"
+						/>
+					</div>
 					<p class="animate">Please present the QR Code above upon arrival.</p>
 				</div>
 			</div>
@@ -114,11 +133,19 @@
 
 <script setup lang="ts">
 import gsap from 'gsap/all';
+import useAppStore from '~/store/useAppStore';
 
 const $audio = ref<HTMLAudioElement | null>(null);
 const $main = ref<HTMLElement | null>(null);
 const $intro = ref<HTMLElement | null>(null);
+const $store = useAppStore();
 const isVisible = ref(false);
+
+const $route = useRoute();
+const company = computed(() => {
+	const id = $route.query.id;
+	return $store.companies.find((c: any) => c.id === id);
+});
 
 const initialize = () => {
 	if (!$main.value) return;
@@ -226,7 +253,8 @@ section {
 			height: auto;
 
 			/* Randomize star position, animation, and size for 10 stars */
-			@for $i from 1 through 50 {
+
+			@for $i from 1 through 1 {
 				&:nth-child(#{$i}) {
 					opacity: #{0.05 + random(31) / 100};
 					$top: random(90); // percent of viewport height
@@ -271,12 +299,19 @@ section {
 		z-index: 0;
 		opacity: 0.78;
 
-		img {
+		img,
+		video {
 			@include fill(absolute);
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 			object-position: top center;
+		}
+		&::after {
+			content: '';
+			@include fill(absolute);
+			background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.68));
+			opacity: 1;
 		}
 	}
 
@@ -312,16 +347,17 @@ section {
 
 		#company {
 			margin: var(--spacer-32) 0;
+			text-align: center;
 
 			p {
 				font-style: italic;
 
 				span {
 					&:nth-child(1) {
-						font-size: 16px;
+						font-size: 14px;
 					}
 					&:nth-child(2) {
-						font-size: 32px;
+						font-size: 26px;
 					}
 				}
 			}
@@ -363,6 +399,10 @@ section {
 			justify-content: center;
 			gap: var(--spacer-16);
 			margin-top: var(--spacer-64);
+
+			.animate {
+				width: 180px;
+			}
 
 			img {
 				position: relative;

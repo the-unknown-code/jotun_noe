@@ -12,6 +12,7 @@ export default defineStore('app.store', {
 		enabled: true,
 		stories: [] as Story[],
 		settings: {} as any,
+		companies: [] as any[],
 		debug: {
 			orchestra: false,
 			buildPanel: false,
@@ -43,6 +44,9 @@ export default defineStore('app.store', {
 			if (!this.stories.find((s: Story) => s.id === story.id)) {
 				this.stories.push(story);
 			}
+		},
+		setCompanies(data: any[]) {
+			this.companies = data;
 		},
 		saveSettings(data: any) {
 			this.settings = data;

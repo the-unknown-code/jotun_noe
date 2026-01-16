@@ -15,13 +15,11 @@
 			$store.theme
 		]"
 	>
-		<client-only>
-			<lazy-three-root v-if="app.three.enabled" :options="app.three.options" />
-		</client-only>
-
-		<nuxt-layout>
-			<nuxt-page />
-		</nuxt-layout>
+		<template v-if="$store.companies.length > 0">
+			<nuxt-layout>
+				<nuxt-page />
+			</nuxt-layout>
+		</template>
 	</div>
 </template>
 
@@ -31,9 +29,6 @@ import { EVENTS } from './libs/constants/event';
 import useAppStore from './store/useAppStore';
 
 const $store = useAppStore();
-const {
-	public: { app },
-} = useRuntimeConfig();
 const { $emit } = useNuxtApp();
 const { width, height } = useWindowSize();
 const { isLoading } = useLoadingIndicator();
@@ -57,6 +52,14 @@ scope.run(async () => {
 	watch([width, height], () => {
 		resize();
 	});
+});
+
+tryOnMounted(async () => {
+	await fetch('/api/companies')
+		.then(response => response.json())
+		.then(data => {
+			$store.setCompanies(data);
+		});
 });
 
 tryOnBeforeMount(async () => {

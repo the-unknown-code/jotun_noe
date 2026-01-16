@@ -7,7 +7,7 @@ export default defineEventHandler(() => {
 		const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf-8'));
 		return packageJson.version || packageJson.name || '1.0.0';
 	} catch (error) {
+		console.error(error);
 		return 'Unknown';
 	}
 });
-
