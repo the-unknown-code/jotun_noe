@@ -16,6 +16,10 @@
 			<span>Food Notes</span>
 			<span>{{ company?.note }}</span>
 		</p>
+		<p>
+			<span>Table</span>
+			<span>12</span>
+		</p>
 	</div>
 </template>
 
