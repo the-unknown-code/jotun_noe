@@ -73,7 +73,7 @@ export default defineNuxtConfig({
 					{ name: 'og:type', content: 'website' },
 					{
 						name: 'og:image',
-						content: 'https://jotun-noe.vercel.app/images/og.png',
+						content: 'https://jotun-noe.vercel.app/images/og-noe.png',
 					},
 					{
 						name: 'og:image:alt',
@@ -87,7 +87,7 @@ export default defineNuxtConfig({
 					},
 					{
 						name: 'twitter:image',
-						content: 'https://jotun-noe.vercel.app/images/og.png',
+						content: 'https://jotun-noe.vercel.app/images/og-noe.png',
 					},
 				],
 			},
