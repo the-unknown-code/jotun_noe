@@ -14,7 +14,7 @@
 		</p>
 		<p>
 			<span>Food Notes</span>
-			<span>{{ company?.note }}</span>
+			<span>{{ company?.special_request }}</span>
 		</p>
 		<p>
 			<span>Table</span>
