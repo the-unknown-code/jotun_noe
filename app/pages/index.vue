@@ -1,20 +1,16 @@
 <template>
 	<section>
-		<audio
-			ref="$audio"
+		<audio ref="$audio"
 			type="audio/mpeg"
 			src="/sound/ambience.mp3"
 			loop
-			autoplay
-		></audio>
+			autoplay></audio>
 		<div class="page-index__background">
-			<video
-				src="/video/background.mp4"
+			<video src="/video/background.mp4"
 				autoplay
 				loop
 				muted
-				playsinline
-			></video>
+				playsinline></video>
 		</div>
 		<!--		<div id="stars">
 			<img
@@ -27,35 +23,26 @@
 		</div>
 		-->
 
-		<main ref="$main" :class="['page-index', { 'is-visible': isVisible }]">
+		<main ref="$main"
+			:class="['page-index', { 'is-visible': isVisible }]">
 			<div class="page-index__content">
-				<img
-					id="jotun"
+				<img id="jotun"
 					class="animate"
 					src="/images/logo.webp"
-					alt="JOTUN - Invitation"
-				/>
+					alt="JOTUN - Invitation" />
 				<div id="logo">
-					<img
-						class="animate"
+					<img class="animate"
 						src="/images/title_01.webp"
-						alt="JOTUN - Invitation"
-					/>
-					<img
-						class="animate"
+						alt="JOTUN - Invitation" />
+					<img class="animate"
 						src="/images/title_02.webp"
-						alt="JOTUN - Invitation"
-					/>
-					<img
-						class="animate"
+						alt="JOTUN - Invitation" />
+					<img class="animate"
 						src="/images/title_03.webp"
-						alt="JOTUN - Invitation"
-					/>
-					<img
-						class="animate"
+						alt="JOTUN - Invitation" />
+					<img class="animate"
 						src="/images/title_04.webp"
-						alt="JOTUN - Invitation"
-					/>
+						alt="JOTUN - Invitation" />
 				</div>
 				<div id="company">
 					<p class="animate">
@@ -64,11 +51,9 @@
 					</p>
 				</div>
 				<div id="info">
-					<img
-						class="animate"
+					<img class="animate"
 						src="/images/line.webp"
-						alt="JOTUN - Invitation"
-					/>
+						alt="JOTUN - Invitation" />
 					<p class="animate">
 						We are pleased to invite you to attend the
 						<b>Applicator Night Award 2026</b>, an exclusive evening dedicated
@@ -92,11 +77,17 @@
 							<b>Cocktail Party, No Batik</b>
 						</span>
 					</p>
-					<img
-						class="animate"
+					<img class="animate"
 						src="/images/line.webp"
-						alt="JOTUN - Invitation"
-					/>
+						alt="JOTUN - Invitation" />
+				</div>
+				<div id="rsvp">
+					<p class="animate">
+						RSVP<br />
+						<span>
+							<b>Sekar +62 812-8084-0329</b>
+						</span>
+					</p>
 				</div>
 				<div id="qr-code">
 					<!--
@@ -107,25 +98,22 @@
 					/>
 					-->
 					<div class="animate">
-						<Qrcode
-							:value="`https://jotun-noe.vercel.app/reader?id=${company?.id}`"
+						<Qrcode :value="`https://jotun-noe.vercel.app/reader?id=${company?.id}`"
 							variant="rounded"
 							radius="5"
 							black-color="#debf9a"
-							white-color="transparent"
-						/>
+							white-color="transparent" />
 					</div>
 					<p class="animate">Please present the QR Code above upon arrival.</p>
 				</div>
 			</div>
 		</main>
-		<div id="intro" ref="$intro">
-			<img
-				id="jotun"
+		<div id="intro"
+			ref="$intro">
+			<img id="jotun"
 				class="animate"
 				src="/images/logo.webp"
-				alt="JOTUN - Invitation"
-			/>
+				alt="JOTUN - Invitation" />
 			<p @click="initialize">Open Invitation</p>
 		</div>
 	</section>
@@ -186,20 +174,25 @@ tryOnMounted(async () => {
 	0% {
 		transform: scale(1) rotate(0deg);
 	}
+
 	20% {
 		transform: scale(1.25) rotate(72deg);
 		filter: brightness(2.2);
 	}
+
 	40% {
 		transform: scale(1.05) rotate(144deg);
 	}
+
 	60% {
 		transform: scale(1.18) rotate(216deg);
 		filter: brightness(2.5);
 	}
+
 	80% {
 		transform: scale(1) rotate(288deg);
 	}
+
 	100% {
 		transform: scale(1) rotate(360deg);
 		filter: brightness(0.7);
@@ -261,19 +254,21 @@ section {
 					$left: random(90); // percent of viewport width
 					$size: 10 + random(61); // size in px, from 50 to 90
 					$dur: 2 + random(45) / 10; // random duration 2s to 4.5s
-					$animation_types: (linear);
-					$animtype: nth($animation_types, random(length($animation_types)));
-					top: #{$top}vh;
-					left: #{$left}vw;
-					width: #{$size}px;
-					animation: star-shine #{$dur}s #{$animtype} infinite;
-					will-change: transform, opacity, filter;
-					transform-origin: 50% 50%;
-					pointer-events: none;
-				}
+					$animation_types: (
+						linear
+					);
+				$animtype: nth($animation_types, random(length($animation_types)));
+				top: #{$top}vh;
+				left: #{$left}vw;
+				width: #{$size}px;
+				animation: star-shine #{$dur}s #{$animtype} infinite;
+				will-change: transform, opacity, filter;
+				transform-origin: 50% 50%;
+				pointer-events: none;
 			}
 		}
 	}
+}
 }
 
 .page-index {
@@ -307,6 +302,7 @@ section {
 			object-fit: cover;
 			object-position: top center;
 		}
+
 		&::after {
 			content: '';
 			@include fill(absolute);
@@ -349,13 +345,16 @@ section {
 			margin: var(--spacer-32) 0;
 			text-align: center;
 
+
 			p {
 				font-style: italic;
+				visibility: hidden;
 
 				span {
 					&:nth-child(1) {
 						font-size: 14px;
 					}
+
 					&:nth-child(2) {
 						font-size: 26px;
 					}
@@ -363,7 +362,13 @@ section {
 			}
 		}
 
-		#info {
+
+		#rsvp {
+			margin-top: var(--spacer-32);
+		}
+
+		#info,
+		#rsvp {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -399,6 +404,9 @@ section {
 			justify-content: center;
 			gap: var(--spacer-16);
 			margin-top: var(--spacer-64);
+			visibility: hidden;
+			opacity: 0;
+			display: none;
 
 			.animate {
 				width: 180px;
