@@ -1,5 +1,6 @@
 <template>
-	<div v-if="company" class="page-reader">
+	<div v-if="company"
+		class="page-reader">
 		<p>
 			<span>Company Name</span>
 			<span>{{ company?.company }}</span>
@@ -18,7 +19,7 @@
 		</p>
 		<p>
 			<span>Table</span>
-			<span>12</span>
+			<span>-</span>
 		</p>
 	</div>
 </template>
@@ -46,6 +47,9 @@ const company = computed(() => {
 	color: black;
 	font-weight: bold;
 	padding: var(--spacer-16);
+	visibility: hidden;
+	opacity: 0;
+	display: none;
 
 	p {
 		width: 100%;
@@ -62,6 +66,7 @@ const company = computed(() => {
 			&:nth-child(1) {
 				font-size: 13px;
 			}
+
 			&:nth-child(2) {
 				font-size: 22px;
 			}
