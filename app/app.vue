@@ -7,14 +7,12 @@
 -->
 
 <template>
-	<div
-		id="site"
+	<div id="site"
 		:class="[
 			toKebabCase(route.name as string),
-			{  'is-disabled': !enabled, 'fonts-loaded': fontsLoaded, 'is-loading': isLoading },
+			{ 'is-disabled': !enabled, 'fonts-loaded': fontsLoaded, 'is-loading': isLoading },
 			$store.theme
-		]"
-	>
+		]">
 		<template v-if="$store.companies.length > 0">
 			<nuxt-layout>
 				<nuxt-page />
@@ -71,7 +69,7 @@ tryOnBeforeMount(async () => {
 #site {
 	position: relative;
 	width: 100vw;
-	min-height: 100vh;
+	min-height: 100dvh;
 	overflow-x: clip;
 	opacity: 0;
 

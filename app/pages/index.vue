@@ -199,7 +199,7 @@ tryOnMounted(async () => {
 
 section {
 	position: relative;
-	min-height: 100vh;
+	min-height: 100dvh;
 	background-color: #12000b;
 
 	#intro {
