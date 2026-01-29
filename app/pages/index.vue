@@ -216,6 +216,8 @@ section {
 		color: #e7c79a;
 		z-index: 10;
 
+
+
 		img {
 			width: 120px;
 		}
@@ -272,7 +274,9 @@ section {
 }
 
 .page-index {
-	min-height: 100dvh;
+	position: fixed;
+	width: 100%;
+	min-height: 100vh;
 	color: #e7c79a;
 	// padding-bottom: var(--spacer-64);
 	display: none;
@@ -331,6 +335,7 @@ section {
 			position: relative;
 			width: 100%;
 			aspect-ratio: 1370/636;
+			min-width: 360px;
 
 			img {
 				position: absolute;
@@ -345,6 +350,9 @@ section {
 			margin: var(--spacer-32) 0;
 			text-align: center;
 
+			display: none !important;
+			visibility: hidden;
+			opacity: 0;
 
 			p {
 				font-style: italic;
@@ -367,6 +375,12 @@ section {
 			margin-top: var(--spacer-32);
 		}
 
+		#info {
+			display: none !important;
+			visibility: hidden;
+			opacity: 0;
+		}
+
 		#info,
 		#rsvp {
 			display: flex;
@@ -375,6 +389,10 @@ section {
 			justify-content: center;
 			gap: var(--spacer-16);
 			text-align: center;
+
+			display: none !important;
+			visibility: hidden;
+			opacity: 0;
 
 			p {
 				font-size: 14px;
@@ -404,9 +422,12 @@ section {
 			justify-content: center;
 			gap: var(--spacer-16);
 			margin-top: var(--spacer-64);
+
+			/*
 			visibility: hidden;
 			opacity: 0;
 			display: none;
+			*/
 
 			.animate {
 				width: 180px;
