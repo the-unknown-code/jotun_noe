@@ -60,6 +60,7 @@ tryOnMounted(async () => {
 		});
 });
 
+// update
 tryOnBeforeMount(async () => {
 	await preloadFonts();
 });

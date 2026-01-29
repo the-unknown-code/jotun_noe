@@ -197,6 +197,7 @@ tryOnMounted(async () => {
 	}
 }
 
+
 section {
 	position: relative;
 	min-height: 100dvh;
