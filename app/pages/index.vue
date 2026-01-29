@@ -55,24 +55,22 @@
 						src="/images/line.webp"
 						alt="JOTUN - Invitation" />
 					<p class="animate">
-						We are pleased to invite you to attend the
-						<b>Applicator Night Award 2026</b>, an exclusive evening dedicated
-						to honouring outstanding achievements and valuable contributions.
+						Thank you for confirming your attendance<br />at the <b>Jotun Applicator Night Award</b>.
 					</p>
 					<p class="animate">
-						Location<br />
+						<small>Location</small><br />
 						<span>
 							<b>Black Owl PIK</b>
 						</span>
 					</p>
 					<p class="animate">
-						Date & Time<br />
+						<small>Date & Time</small><br />
 						<span>
 							<b>February 6, 2026 at 17:00</b>
 						</span>
 					</p>
 					<p class="animate">
-						Dress Code<br />
+						<small>Dress Code</small><br />
 						<span>
 							<b>Cocktail Party, No Batik</b>
 						</span>
@@ -114,7 +112,7 @@
 				class="animate"
 				src="/images/logo.webp"
 				alt="JOTUN - Invitation" />
-			<p @click="initialize">Open Invitation</p>
+			<p @click="initialize">Open Confirmation</p>
 		</div>
 	</section>
 </template>
@@ -327,7 +325,7 @@ section {
 		margin: 0 auto;
 
 		#jotun {
-			width: 120px;
+			width: 90px;
 			height: auto;
 		}
 
@@ -335,7 +333,7 @@ section {
 			position: relative;
 			width: 100%;
 			aspect-ratio: 1370/636;
-			min-width: 360px;
+			width: 280px;
 
 			img {
 				position: absolute;
@@ -376,6 +374,10 @@ section {
 		}
 
 		#info {
+			margin-top: var(--spacer-16);
+		}
+
+		#rsvp {
 			display: none !important;
 			visibility: hidden;
 			opacity: 0;
@@ -390,9 +392,6 @@ section {
 			gap: var(--spacer-16);
 			text-align: center;
 
-			display: none !important;
-			visibility: hidden;
-			opacity: 0;
 
 			p {
 				font-size: 14px;
@@ -404,7 +403,11 @@ section {
 				}
 
 				span {
-					font-size: 16px;
+					font-size: 14px;
+				}
+
+				small {
+					font-size: 12px !important;
 				}
 			}
 
@@ -420,17 +423,17 @@ section {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			gap: var(--spacer-16);
-			margin-top: var(--spacer-64);
+			gap: var(--spacer-8);
+			margin-top: var(--spacer-16);
 
 			/*
-			visibility: hidden;
+			visibility: hidden;16
 			opacity: 0;
 			display: none;
 			*/
 
 			.animate {
-				width: 180px;
+				width: 150px;
 			}
 
 			img {
@@ -443,6 +446,7 @@ section {
 				font-size: 13px;
 				font-style: italic;
 				text-align: center;
+				width: 210px !important;
 			}
 		}
 	}
