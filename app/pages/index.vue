@@ -98,7 +98,7 @@
 					/>
 					-->
 					<div class="animate">
-						<Qrcode :value="`https://jotun-noe.vercel.app/reader?id=${company?.id}`"
+						<Qrcode :value="`https://jotun-noe-git-qr-lost-signal.vercel.app/reader?id=${company?.id}`"
 							variant="rounded"
 							radius="5"
 							black-color="#debf9a"
