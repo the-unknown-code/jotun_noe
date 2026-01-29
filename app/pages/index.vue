@@ -214,8 +214,6 @@ section {
 		color: #e7c79a;
 		z-index: 10;
 
-
-
 		img {
 			width: 120px;
 		}
@@ -272,12 +270,13 @@ section {
 }
 
 .page-index {
-	position: fixed;
+	position: relative;
 	width: 100%;
-	min-height: 100vh;
+	min-height: 100dvh;
 	color: #e7c79a;
 	// padding-bottom: var(--spacer-64);
 	display: none;
+	overflow: hidden;
 
 	&.is-visible {
 		display: flex;
