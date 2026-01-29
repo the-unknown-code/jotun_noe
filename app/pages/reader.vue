@@ -34,6 +34,11 @@ const company = computed(() => {
 	const id = $route.query.id;
 	return $store.companies.find((c: any) => c.id === id);
 });
+
+const $router = useRouter()
+tryOnMounted(() => {
+	$router.push('/');
+})
 </script>
 
 <style lang="scss" scoped>
