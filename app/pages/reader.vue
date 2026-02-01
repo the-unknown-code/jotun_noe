@@ -35,10 +35,6 @@ const company = computed(() => {
 	return $store.companies.find((c: any) => c.id === id);
 });
 
-const $router = useRouter()
-tryOnMounted(() => {
-	$router.push('/');
-})
 </script>
 
 <style lang="scss" scoped>
@@ -52,9 +48,6 @@ tryOnMounted(() => {
 	color: black;
 	font-weight: bold;
 	padding: var(--spacer-16);
-	visibility: hidden;
-	opacity: 0;
-	display: none;
 
 	p {
 		width: 100%;
