@@ -11,7 +11,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "GQFLOWA0"
+		"code": "GQFLOWA0",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=GQFLOWA0"
 	},
 	{
 		"id": 2,
@@ -25,7 +26,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 12",
-		"code": "K29PH4SU"
+		"code": "K29PH4SU",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=K29PH4SU"
 	},
 	{
 		"id": 3,
@@ -39,7 +41,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 16",
-		"code": "NJWCEUV5"
+		"code": "NJWCEUV5",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=NJWCEUV5"
 	},
 	{
 		"id": 4,
@@ -53,7 +56,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 17",
-		"code": "O8YJG36K"
+		"code": "O8YJG36K",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=O8YJG36K"
 	},
 	{
 		"id": 5,
@@ -67,7 +71,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 22",
-		"code": "FVU3JP6L"
+		"code": "FVU3JP6L",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=FVU3JP6L"
 	},
 	{
 		"id": 6,
@@ -81,7 +86,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 2",
-		"code": "8K4LDAVM"
+		"code": "8K4LDAVM",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=8K4LDAVM"
 	},
 	{
 		"id": 7,
@@ -95,21 +101,23 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 2",
-		"code": "FUR5IEQ3"
+		"code": "FUR5IEQ3",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=FUR5IEQ3"
 	},
 	{
 		"id": 8,
 		"company": "PT. TAN PAINTINDO",
-		"guests": 1,
+		"guests": 2,
 		"confirmed": "Confirmed",
-		"name": "Mr. Iwan Santoso",
+		"name": "Mr. Iwan Santoso & Ms. Ludwina eugenia",
 		"region": "WEST",
 		"notes": "-",
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 4",
-		"code": "Y72HZNFS"
+		"code": "Y72HZNFS",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=Y72HZNFS"
 	},
 	{
 		"id": 9,
@@ -123,7 +131,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 6",
-		"code": "ZV7R3LUQ"
+		"code": "ZV7R3LUQ",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=ZV7R3LUQ"
 	},
 	{
 		"id": 10,
@@ -137,7 +146,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 7",
-		"code": "KBGUSV85"
+		"code": "KBGUSV85",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=KBGUSV85"
 	},
 	{
 		"id": 11,
@@ -151,7 +161,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 23",
-		"code": "HLNA9R1B"
+		"code": "HLNA9R1B",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=HLNA9R1B"
 	},
 	{
 		"id": 12,
@@ -165,7 +176,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "IPYBZFMV"
+		"code": "IPYBZFMV",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=IPYBZFMV"
 	},
 	{
 		"id": 13,
@@ -179,7 +191,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 1",
-		"code": "WSQRDJ6B"
+		"code": "WSQRDJ6B",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=WSQRDJ6B"
 	},
 	{
 		"id": 14,
@@ -192,8 +205,9 @@
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
-		"seat": "V 4",
-		"code": "TXC1VKLB"
+		"seat": " ",
+		"code": "TXC1VKLB",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=TXC1VKLB"
 	},
 	{
 		"id": 15,
@@ -207,7 +221,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 22",
-		"code": "JG57BMAS"
+		"code": "JG57BMAS",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=JG57BMAS"
 	},
 	{
 		"id": 16,
@@ -221,7 +236,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 11",
-		"code": "M68QEL1T"
+		"code": "M68QEL1T",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=M68QEL1T"
 	},
 	{
 		"id": 17,
@@ -235,7 +251,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 12",
-		"code": "K8B5MNZP"
+		"code": "K8B5MNZP",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=K8B5MNZP"
 	},
 	{
 		"id": 18,
@@ -248,8 +265,9 @@
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
-		"seat": "",
-		"code": "53DR7KYP"
+		"seat": "S 2",
+		"code": "53DR7KYP",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=53DR7KYP"
 	},
 	{
 		"id": 19,
@@ -263,7 +281,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "WAY7X8VK"
+		"code": "WAY7X8VK",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=WAY7X8VK"
 	},
 	{
 		"id": 20,
@@ -277,7 +296,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 3",
-		"code": "B6K5ZU2A"
+		"code": "B6K5ZU2A",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=B6K5ZU2A"
 	},
 	{
 		"id": 21,
@@ -291,7 +311,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 7",
-		"code": "9H0AN2QW"
+		"code": "9H0AN2QW",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=9H0AN2QW"
 	},
 	{
 		"id": 22,
@@ -305,7 +326,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 15",
-		"code": "0EZXRNUD"
+		"code": "0EZXRNUD",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=0EZXRNUD"
 	},
 	{
 		"id": 23,
@@ -319,7 +341,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 8",
-		"code": "XR3POWLC"
+		"code": "XR3POWLC",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=XR3POWLC"
 	},
 	{
 		"id": 24,
@@ -333,7 +356,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "WM8Q0R5C"
+		"code": "WM8Q0R5C",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=WM8Q0R5C"
 	},
 	{
 		"id": 25,
@@ -346,8 +370,9 @@
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
-		"seat": "S 2",
-		"code": "6BJ3R9GX"
+		"seat": "S 13",
+		"code": "6BJ3R9GX",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=6BJ3R9GX"
 	},
 	{
 		"id": 26,
@@ -361,21 +386,23 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 5",
-		"code": "N4QUGMBA"
+		"code": "N4QUGMBA",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=N4QUGMBA"
 	},
 	{
 		"id": 27,
 		"company": "PT. HANDIRA EKA MANDIRI",
 		"guests": 2,
 		"confirmed": "Confirmed",
-		"name": "Mr. Handy & Partner",
+		"name": "Mr. Handy & Mr. Rey",
 		"region": "WEST",
 		"notes": "-",
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 12",
-		"code": "J13YNWQX"
+		"code": "J13YNWQX",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=J13YNWQX"
 	},
 	{
 		"id": 28,
@@ -389,7 +416,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 17",
-		"code": "1OWD7CFV"
+		"code": "1OWD7CFV",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=1OWD7CFV"
 	},
 	{
 		"id": 29,
@@ -403,7 +431,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 13",
-		"code": "UHKMEQ2J"
+		"code": "UHKMEQ2J",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=UHKMEQ2J"
 	},
 	{
 		"id": 30,
@@ -417,7 +446,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 21",
-		"code": "7TE039N1"
+		"code": "7TE039N1",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=7TE039N1"
 	},
 	{
 		"id": 31,
@@ -431,7 +461,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 16",
-		"code": "E31VPL5B"
+		"code": "E31VPL5B",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=E31VPL5B"
 	},
 	{
 		"id": 32,
@@ -445,7 +476,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "N9KGR6QT"
+		"code": "N9KGR6QT",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=N9KGR6QT"
 	},
 	{
 		"id": 33,
@@ -459,7 +491,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "T0BGJ57X"
+		"code": "T0BGJ57X",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=T0BGJ57X"
 	},
 	{
 		"id": 34,
@@ -473,35 +506,38 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 3",
-		"code": "VUBDKT2Q"
+		"code": "VUBDKT2Q",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=VUBDKT2Q"
 	},
 	{
 		"id": 35,
 		"company": "PT. RIMA INDONESIA COATING HARMONI",
-		"guests": 2,
+		"guests": 1,
 		"confirmed": "Confirmed",
-		"name": "Mrs. Dyma Alwehan & Partner",
+		"name": "Mrs. Dyma Alwehan",
 		"region": "WEST",
 		"notes": "-",
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
-		"seat": "",
-		"code": "HC4ODY5S"
+		"seat": "T 19",
+		"code": "HC4ODY5S",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=HC4ODY5S"
 	},
 	{
 		"id": 36,
 		"company": "CV. JAYA MILENIAL INDONESIA",
 		"guests": 2,
 		"confirmed": "Confirmed",
-		"name": "Mr. Jemmy & Partner",
+		"name": "Mr. Jemmy & Ms. Yefta",
 		"region": "WEST",
 		"notes": "-",
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 10",
-		"code": "Y6PT9S3V"
+		"code": "Y6PT9S3V",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=Y6PT9S3V"
 	},
 	{
 		"id": 37,
@@ -515,7 +551,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "O8V1UL2R"
+		"code": "O8V1UL2R",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=O8V1UL2R"
 	},
 	{
 		"id": 38,
@@ -529,7 +566,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "L9QF4S1G"
+		"code": "L9QF4S1G",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=L9QF4S1G"
 	},
 	{
 		"id": 39,
@@ -543,7 +581,8 @@
 		"arrival": "04 Feb, 10:10",
 		"accomodation": "Tbc",
 		"seat": "T 15",
-		"code": "8Y3VXQDM"
+		"code": "8Y3VXQDM",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=8Y3VXQDM"
 	},
 	{
 		"id": 40,
@@ -557,7 +596,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "7X53CRBD"
+		"code": "7X53CRBD",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=7X53CRBD"
 	},
 	{
 		"id": 41,
@@ -571,7 +611,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 1",
-		"code": "E9GH1VTZ"
+		"code": "E9GH1VTZ",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=E9GH1VTZ"
 	},
 	{
 		"id": 42,
@@ -585,7 +626,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 10",
-		"code": "Z8TXJAHW"
+		"code": "Z8TXJAHW",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=Z8TXJAHW"
 	},
 	{
 		"id": 43,
@@ -599,7 +641,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 9",
-		"code": "UQRWJ3A7"
+		"code": "UQRWJ3A7",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=UQRWJ3A7"
 	},
 	{
 		"id": 44,
@@ -613,7 +656,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 8",
-		"code": "5M7PZJKC"
+		"code": "5M7PZJKC",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=5M7PZJKC"
 	},
 	{
 		"id": 45,
@@ -627,7 +671,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 1",
-		"code": "P4RME325"
+		"code": "P4RME325",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=P4RME325"
 	},
 	{
 		"id": 46,
@@ -641,7 +686,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 10",
-		"code": "YMKRPGV8"
+		"code": "YMKRPGV8",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=YMKRPGV8"
 	},
 	{
 		"id": 47,
@@ -655,7 +701,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 21",
-		"code": "PF8U314C"
+		"code": "PF8U314C",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=PF8U314C"
 	},
 	{
 		"id": 48,
@@ -669,7 +716,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 20",
-		"code": "5NRA0B8S"
+		"code": "5NRA0B8S",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=5NRA0B8S"
 	},
 	{
 		"id": 49,
@@ -683,7 +731,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 20",
-		"code": "N4B88ZTP"
+		"code": "N4B88ZTP",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=N4B88ZTP"
 	},
 	{
 		"id": 50,
@@ -697,7 +746,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "S 9",
-		"code": "Z31APKQU"
+		"code": "Z31APKQU",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=Z31APKQU"
 	},
 	{
 		"id": 51,
@@ -711,7 +761,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 5",
-		"code": "G5U7K0SE"
+		"code": "G5U7K0SE",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=G5U7K0SE"
 	},
 	{
 		"id": 52,
@@ -725,7 +776,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 7",
-		"code": "J2HNMS9R"
+		"code": "J2HNMS9R",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=J2HNMS9R"
 	},
 	{
 		"id": 53,
@@ -739,7 +791,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 5",
-		"code": "N59TQ2JE"
+		"code": "N59TQ2JE",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=N59TQ2JE"
 	},
 	{
 		"id": 54,
@@ -753,21 +806,23 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 8",
-		"code": "AR3CXDK2"
+		"code": "AR3CXDK2",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=AR3CXDK2"
 	},
 	{
 		"id": 55,
 		"company": "CV. BINA CIPTA WARNA",
 		"guests": 2,
 		"confirmed": "Confirmed",
-		"name": "Mr. Indra (0813-28372277)",
+		"name": "Mr. Indra",
 		"region": "EAST",
 		"notes": "Vegan (Mr. Indra)",
 		"hotel": "Non smoking king bed",
 		"arrival": "06 Feb, 11:20",
 		"accomodation": "1 ticket",
 		"seat": "T 14",
-		"code": "6L4HZPWV"
+		"code": "6L4HZPWV",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=6L4HZPWV"
 	},
 	{
 		"id": 56,
@@ -781,63 +836,68 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "QUKOI6XZ"
+		"code": "QUKOI6XZ",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=QUKOI6XZ"
 	},
 	{
 		"id": 57,
 		"company": "CV. MUKTI ABADI",
 		"guests": 1,
 		"confirmed": "Confirmed",
-		"name": "Bp. Agus Baharudin (08121680601)",
+		"name": "Mr. Agus Baharudin",
 		"region": "EAST",
 		"notes": "-",
 		"hotel": "Smoking room king bed",
 		"arrival": "-",
 		"accomodation": "1 ticket",
 		"seat": "T 14",
-		"code": "Z4AVDJR8"
+		"code": "Z4AVDJR8",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=Z4AVDJR8"
 	},
 	{
 		"id": 58,
 		"company": "CV. BUKIT JAYA",
 		"guests": 1,
 		"confirmed": "Confirmed",
-		"name": "Bp. Choiron Amin (081330324676)",
+		"name": "Mr. Choiron Amin",
 		"region": "EAST",
 		"notes": "-",
 		"hotel": "Non smoking king bed",
 		"arrival": "06 Feb, 09:10",
 		"accomodation": "1 ticket",
 		"seat": "T 19",
-		"code": "WPRFTV3S"
+		"code": "WPRFTV3S",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=WPRFTV3S"
 	},
 	{
 		"id": 59,
 		"company": "CV. SURYA KARYA PRATAMA",
 		"guests": 2,
 		"confirmed": "Confirmed",
-		"name": "Bp. Khoiril Anwar & Mr. Farhan",
+		"name": "Mr. Farhan & Mr. Galang",
 		"region": "EAST",
 		"notes": "-",
 		"hotel": "Smoking room twin bed",
 		"arrival": "-",
 		"accomodation": "2 ticket",
 		"seat": "T 19",
-		"code": "4TOPEL3Z"
+		"code": "4TOPEL3Z",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=4TOPEL3Z"
 	},
 	{
 		"id": 60,
 		"company": "PT. DIATAMA CITRA MANDIRI",
 		"guests": 2,
 		"confirmed": "Confirmed",
-		"name": "Bp. Ikhlas Maulana (08113340047) & Wife",
+		"name": "Mr. Ikhlas Maulana & Wife",
 		"region": "EAST",
 		"notes": "-",
 		"hotel": "Non smoking king bed",
 		"arrival": "06 Feb, 13:10",
 		"accomodation": "1 ticket",
 		"seat": "T 6",
-		"code": "ML5RUZ0W"
+		"code": "ML5RUZ0W",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=ML5RUZ0W"
 	},
 	{
 		"id": 61,
@@ -851,49 +911,53 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "1QXPCEMT"
+		"code": "1QXPCEMT",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=1QXPCEMT"
 	},
 	{
 		"id": 62,
 		"company": "CV. BINTER",
 		"guests": 2,
 		"confirmed": "Confirmed",
-		"name": "Bp. Robert Penna (081333772000)",
+		"name": "Mr. Robert Penna & Partner",
 		"region": "EAST",
 		"notes": "-",
 		"hotel": "Non smoking king bed",
 		"arrival": "03 Feb, 14:55",
 		"accomodation": "1 ticket",
 		"seat": "T 9",
-		"code": "F0E9N5BR"
+		"code": "F0E9N5BR",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=F0E9N5BR"
 	},
 	{
 		"id": 63,
 		"company": "CV. MITRA TANGGUH REKACIPTA",
 		"guests": 1,
 		"confirmed": "Confirmed",
-		"name": "Bp. Isaac (081235077101)",
+		"name": "Mr. Isaac",
 		"region": "EAST",
 		"notes": "-",
 		"hotel": "Non smoking twin bed",
 		"arrival": "06 Feb, 13:10",
 		"accomodation": "1 ticket",
 		"seat": "T 6",
-		"code": "50U1EGBQ"
+		"code": "50U1EGBQ",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=50U1EGBQ"
 	},
 	{
 		"id": 64,
 		"company": "CV. PISON INDOGRAHA",
 		"guests": 1,
 		"confirmed": "Confirmed",
-		"name": "Tbc",
+		"name": "CV. Pison Indograha",
 		"region": "EAST",
 		"notes": "-",
 		"hotel": "Non smoking king bed",
 		"arrival": "-",
 		"accomodation": "1 ticket",
 		"seat": "T 11",
-		"code": "RXQ3VNME"
+		"code": "RXQ3VNME",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=RXQ3VNME"
 	},
 	{
 		"id": 65,
@@ -907,7 +971,8 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "3PNAJEOX"
+		"code": "3PNAJEOX",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=3PNAJEOX"
 	},
 	{
 		"id": 66,
@@ -921,7 +986,8 @@
 		"arrival": "-",
 		"accomodation": "1 ticket",
 		"seat": "T 11",
-		"code": "J1BRTP8G"
+		"code": "J1BRTP8G",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=J1BRTP8G"
 	},
 	{
 		"id": 67,
@@ -935,7 +1001,8 @@
 		"arrival": "-",
 		"accomodation": "1 ticket",
 		"seat": "T 11",
-		"code": "KD8YV12Q"
+		"code": "KD8YV12Q",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=KD8YV12Q"
 	},
 	{
 		"id": 68,
@@ -949,7 +1016,8 @@
 		"arrival": "06 Feb, 14:10",
 		"accomodation": "1 ticket",
 		"seat": "T 11",
-		"code": "AEF0OY3G"
+		"code": "AEF0OY3G",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=AEF0OY3G"
 	},
 	{
 		"id": 69,
@@ -963,49 +1031,53 @@
 		"arrival": "-",
 		"accomodation": "1 ticket",
 		"seat": "T 6",
-		"code": "N2JQW8OJ"
+		"code": "N2JQW8OJ",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=N2JQW8OJ"
 	},
 	{
 		"id": 70,
 		"company": "PT SEGARA SWARABRATA ASRI",
 		"guests": 2,
 		"confirmed": "Confirmed",
-		"name": "Bpk. Adrianus Anop (0816904733) & Partner",
+		"name": "Mr. Adrianus Anop & Partner",
 		"region": "EAST",
 		"notes": "-",
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 18",
-		"code": "5XWNDPFZ"
+		"code": "5XWNDPFZ",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=5XWNDPFZ"
 	},
 	{
 		"id": 71,
 		"company": "CV SUMBER RIZKI",
 		"guests": 1,
 		"confirmed": "Confirmed",
-		"name": "Bpk. Azis",
+		"name": "Mr. Azis",
 		"region": "EAST",
 		"notes": "-",
 		"hotel": "Non smoking king bed",
 		"arrival": "-",
 		"accomodation": "1 ticket",
 		"seat": "T 14",
-		"code": "17K4WUZP"
+		"code": "17K4WUZP",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=17K4WUZP"
 	},
 	{
 		"id": 72,
 		"company": "CV BUANA RAYA KENCANA",
 		"guests": 1,
 		"confirmed": "Confirmed",
-		"name": "Bpk. Sugino (0811 2666 531)",
+		"name": "Mr. Sugino",
 		"region": "EAST",
 		"notes": "-",
 		"hotel": "Non smoking king bed",
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 18",
-		"code": "FYLVX2JR"
+		"code": "FYLVX2JR",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=FYLVX2JR"
 	},
 	{
 		"id": 73,
@@ -1019,48 +1091,52 @@
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "",
-		"code": "WC9XD1PY"
+		"code": "WC9XD1PY",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=WC9XD1PY"
 	},
 	{
 		"id": 74,
 		"company": "CV ABADI REZEKI WARNA",
 		"guests": 1,
 		"confirmed": "Tentative",
-		"name": "Bpk Tony",
+		"name": "Mr. Citra Gunawan",
 		"region": "WEST",
 		"notes": "-",
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
-		"seat": "",
-		"code": "SXR2YTN5"
+		"seat": "S 9",
+		"code": "SXR2YTN5",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=SXR2YTN5"
 	},
 	{
 		"id": 75,
 		"company": "SAPUTRA SUMBER JAYA",
 		"guests": 1,
-		"confirmed": "Tentative",
+		"confirmed": "Not join",
 		"name": "Bpk. Handoko",
 		"region": "WEST",
 		"notes": "-",
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
-		"seat": "V 4",
-		"code": "TLJ7NP1F"
+		"seat": "",
+		"code": "TLJ7NP1F",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=TLJ7NP1F"
 	},
 	{
 		"id": 76,
 		"company": "SEKAWAN BANGUN PERKASA",
 		"guests": 2,
 		"confirmed": "Confirmed",
-		"name": "Bpk. Akuang & Partner",
+		"name": "Mr. Akuang & Partner",
 		"region": "WEST",
 		"notes": "-",
 		"hotel": "-",
 		"arrival": "-",
 		"accomodation": "-",
 		"seat": "T 23",
-		"code": "LJE7AOVH"
+		"code": "LJE7AOVH",
+		"url": "https://jotun-noe-git-qr-lost-signal.vercel.app/?id=LJE7AOVH"
 	}
 ]
