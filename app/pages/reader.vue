@@ -6,20 +6,17 @@
 			<span>{{ company?.company }}</span>
 		</p>
 		<p>
-			<span>N° of Invitee</span>
-			<span>{{ company?.pax }}</span>
+			<span>Number of Invitee</span>
+			<span>{{ company?.guests }}</span>
 		</p>
 		<p>
 			<span>Guest List</span>
-			<span>{{ company?.guest }}</span>
+			<span>{{ company?.name }}</span>
 		</p>
-		<p>
-			<span>Food Notes</span>
-			<span>{{ company?.special_request }}</span>
-		</p>
+
 		<p>
 			<span>Table</span>
-			<span>-</span>
+			<span>{{ company?.seat }}</span>
 		</p>
 	</div>
 </template>
@@ -32,8 +29,10 @@ const $route = useRoute();
 
 const company = computed(() => {
 	const id = $route.query.id;
-	return $store.companies.find((c: any) => c.id === id);
+	return $store.companies.find((c: any) => c.code === id);
 });
+
+console.log($store.companies);
 
 </script>
 

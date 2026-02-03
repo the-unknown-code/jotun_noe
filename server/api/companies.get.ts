@@ -8,7 +8,7 @@ export default defineEventHandler(async event => {
 
 	const { origin } = getRequestURL(event);
 
-	const data = await $fetch(`${origin}/companies.json`, {
+	const data = await $fetch(`${origin}/guestlist.json`, {
 		cache: 'no-store',
 		headers: {
 			'Cache-Control': 'no-cache',
