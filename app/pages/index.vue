@@ -130,7 +130,7 @@ const isVisible = ref(false);
 const $route = useRoute();
 const company = computed(() => {
 	const id = $route.query.id;
-	return $store.companies.find((c: any) => c.id === id);
+	return $store.companies.find((c: any) => c.code === id);
 });
 
 const initialize = () => {
